@@ -138,11 +138,10 @@
             <ul class="flex space-x-6 md:space-x-10 text-lg font-medium">
                 <li><a href="#hero" class="hover:text-accent-gold transition-colors duration-200">Inicio</a></li>
                 <li><a href="#gifts" class="hover:text-accent-gold transition-colors duration-200">Regalos</a></li>
-                <li><a href="#rsvp" class="hover:text-accent-gold transition-colors duration-200">RSVP</a></li>
+                <li><a href="#program" class="hover:text-accent-gold transition-colors duration-200">Programa</a></li>
                 <li><a href="#location" class="hover:text-accent-gold transition-colors duration-200">Ubicación</a></li>
                 <li><a href="#gallery" class="hover:text-accent-gold transition-colors duration-200">Galería</a></li>
                 <li><a href="#hotels" class="hover:text-accent-gold transition-colors duration-200">Hoteles</a></li>
-                <!-- Music section removed from navigation -->
             </ul>
         </div>
     </nav>
@@ -215,21 +214,58 @@
         </svg>
     </section>
 
+    <!-- Program Section -->
+    <section id="program" class="py-16 px-6 bg-primary-light text-center rounded-xl shadow-lg mx-auto max-w-5xl my-12">
+        <h2 class="text-4xl font-bold text-accent-gold mb-6">Programa de la Boda</h2>
+        <p class="text-lg md:text-xl text-text-light mb-8 max-w-3xl mx-auto">
+            Aquí les presentamos el itinerario de nuestro gran día para que no se pierdan ningún momento especial.
+        </p>
+        <div class="max-w-md mx-auto bg-secondary-grey p-6 rounded-xl shadow-md text-left">
+            <ul class="list-disc list-inside text-lg md:text-xl text-text-dark space-y-3">
+                <li><i class="far fa-clock mr-2 text-accent-green"></i> <span class="font-semibold">12:00 PM:</span> Misa</li>
+                <li><i class="far fa-camera mr-2 text-accent-green"></i> <span class="font-semibold">1:00 PM:</span> Sesión de Fotos (Familiares)</li>
+                <li><i class="fas fa-glass-cheers mr-2 text-accent-green"></i> <span class="font-semibold">3:00 PM:</span> Recepción</li>
+                <li><i class="fas fa-door-open mr-2 text-accent-green"></i> <span class="font-semibold">4:00 PM:</span> Entrada de Novios</li>
+                <li><i class="fas fa-heart mr-2 text-accent-green"></i> <span class="font-semibold">4:30 PM:</span> Primer Baile</li>
+                <li><i class="fas fa-utensils mr-2 text-accent-green"></i> <span class="font-semibold">5:00 PM:</span> Comida</li>
+                <li><i class="fas fa-music mr-2 text-accent-green"></i> <span class="font-semibold">6:00 PM:</span> Baile General</li>
+            </ul>
+            <p class="text-md text-text-light mt-8">
+                Para una referencia visual, aquí tienen el gráfico del programa:
+            </p>
+            <img src="https://i.imgur.com/4S2AKMy.jpeg" alt="Gráfico del Programa de la Boda" class="mx-auto rounded-lg shadow-md max-w-full h-auto mt-4">
+        </div>
+        <!-- Contoured calendar/clock icon -->
+        <svg class="w-20 h-20 contoured-svg mx-auto mt-8" viewBox="0 0 100 100">
+            <rect x="20" y="20" width="60" height="60" rx="5" ry="5" stroke-width="2"/>
+            <line x1="20" y1="35" x2="80" y2="35" stroke-width="1.5"/>
+            <circle cx="35" cy="55" r="5" stroke-width="1.5"/>
+            <circle cx="65" cy="55" r="5" stroke-width="1.5"/>
+            <line x1="50" y1="40" x2="50" y2="70" stroke-width="1.5"/>
+            <line x1="50" y1="55" x2="60" y2="55" stroke-width="1.5"/>
+        </svg>
+    </section>
+
     <!-- Gifts Section -->
     <section id="gifts" class="py-16 px-6 bg-secondary-grey text-center rounded-xl shadow-lg mx-auto max-w-5xl my-12">
         <h2 class="text-4xl font-bold text-accent-gold mb-6">Regalos</h2>
         <p class="text-lg md:text-xl text-text-light mb-8 max-w-3xl mx-auto leading-relaxed">
             El mejor regalo es su presencia. Pero si desean obsequiarnos algo más, una contribución para nuestra luna de miel sería un detalle que atesoraremos por siempre.
         </p>
-        <!-- Removed "Contribuir a nuestra Luna de Miel" button -->
 
-        <div class="mt-8">
-            <p class="text-lg md:text-xl text-text-light mb-4">
-                También pueden escanear este código QR para realizar una transferencia bancaria:
+        <div class="mt-8 flex flex-col items-center space-y-4">
+            <p class="text-lg md:text-xl text-text-light">
+                Pueden contribuir a nuestra luna de miel a través de Venmo:
             </p>
-            <!-- QR Code image -->
-            <img src="https://i.imgur.com/FtYYyUT.png" alt="Código QR para Transferencia" class="mx-auto rounded-lg shadow-md max-w-full h-auto">
-            <!-- Removed placeholder instruction text -->
+            <a href="https://venmo.com/u/Juan-Velazquez-38" target="_blank" class="btn-primary">
+                <i class="fab fa-venmo mr-2"></i> Contribuir vía Venmo
+            </a>
+
+            <p class="text-lg md:text-xl text-text-light mt-8">
+                O escanear este código QR para realizar una transferencia bancaria:
+            </p>
+            <!-- Updated QR Code image with the new URL -->
+            <img src="https://i.imgur.com/eWcg4Du.jpeg" alt="Código QR para Transferencia" class="mx-auto rounded-lg shadow-md max-w-full h-auto">
         </div>
 
         <!-- Contoured elements: suitcase, plane, heart -->
@@ -250,27 +286,6 @@
                 <path d="M50,20 C70,0 90,20 90,40 C90,60 50,90 50,90 C50,90 10,60 10,40 C10,20 30,0 50,20 Z" stroke-width="2"/>
             </svg>
         </div>
-    </section>
-
-    <!-- RSVP Section -->
-    <section id="rsvp" class="py-16 px-6 bg-primary-light text-center rounded-xl shadow-lg mx-auto max-w-5xl my-12">
-        <h2 class="text-4xl font-bold text-accent-gold mb-6">Confirma tu Asistencia</h2>
-        <p class="text-lg md:text-xl text-text-light mb-8 max-w-3xl mx-auto">
-            Por favor, ayúdanos a planear mejor confirmando tu asistencia antes del <span class="font-semibold">22 de Noviembre de 2025</span>.
-        </p>
-        <div class="max-w-md mx-auto bg-secondary-grey p-4 rounded-xl shadow-md">
-            <!-- Google Forms Embed Code -->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNe4IgDTHJZXGohm9pFik3IYDcYVscgORqxvWexE9OQeGU0Q/viewform?embedded=true"
-                    width="100%" height="686" frameborder="0" marginheight="0" marginwidth="0"
-                    class="rounded-lg">Cargando…</iframe>
-        </div>
-        <!-- Contoured envelope icon -->
-        <svg class="w-20 h-20 contoured-svg mx-auto mt-8" viewBox="0 0 100 100">
-            <rect x="10" y="30" width="80" height="60" rx="5" ry="5" stroke-width="2"/>
-            <polyline points="10,30 50,60 90,30" stroke-width="2"/>
-            <line x1="10" y1="90" x2="40" y2="60" stroke-width="1.5"/>
-            <line x1="90" y1="90" x2="60" y2="60" stroke-width="1.5"/>
-        </svg>
     </section>
 
     <!-- Location Section -->
@@ -329,7 +344,7 @@
             <img src="https://i.imgur.com/Wynxloa.jpeg" alt="Foto de Boda 7" class="w-full h-auto object-cover rounded-lg shadow-sm">
             <img src="https://i.imgur.com/oXlgDSX.jpeg" alt="Foto de Boda 8" class="w-full h-auto object-cover rounded-lg shadow-sm">
             <img src="https://i.imgur.com/bKfA6lT.jpeg" alt="Foto de Boda 9" class="w-full h-auto object-cover rounded-lg shadow-sm">
-            <img src="https://i.imgur.com/bKfA6lT.jpeg" alt="Foto de Boda 10" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <!-- Photo 10 (https://i.imgur.com/bKfA6lT.jpeg) removed as requested -->
             <img src="https://i.imgur.com/QNyh112.jpeg" alt="Foto de Boda 11" class="w-full h-auto object-cover rounded-lg shadow-sm">
             <img src="https://i.imgur.com/vHPhUem.jpeg" alt="Foto de Boda 12" class="w-full h-auto object-cover rounded-lg shadow-sm">
         </div>
